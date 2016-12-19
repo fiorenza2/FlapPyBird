@@ -99,17 +99,17 @@ def main():
         # select random player sprites
         randPlayer = random.randint(0, len(PLAYERS_LIST) - 1)
         IMAGES['player'] = (
-            pygame.image.load(PLAYERS_LIST[randPlayer][0]).convert_alpha(),
-            pygame.image.load(PLAYERS_LIST[randPlayer][1]).convert_alpha(),
-            pygame.image.load(PLAYERS_LIST[randPlayer][2]).convert_alpha(),
+            pygame.image.load(PLAYERS_LIST[0][0]).convert_alpha(),
+            pygame.image.load(PLAYERS_LIST[0][1]).convert_alpha(),
+            pygame.image.load(PLAYERS_LIST[0][2]).convert_alpha(),
         )
 
         # select random pipe sprites
         pipeindex = random.randint(0, len(PIPES_LIST) - 1)
         IMAGES['pipe'] = (
             pygame.transform.rotate(
-                pygame.image.load(PIPES_LIST[pipeindex]).convert_alpha(), 180),
-            pygame.image.load(PIPES_LIST[pipeindex]).convert_alpha(),
+                pygame.image.load(PIPES_LIST[0]).convert_alpha(), 180),
+            pygame.image.load(PIPES_LIST[0]).convert_alpha(),
         )
 
         # hismask for pipes
