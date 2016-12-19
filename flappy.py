@@ -99,9 +99,9 @@ def main():
         # select random player sprites
         randPlayer = random.randint(0, len(PLAYERS_LIST) - 1)
         IMAGES['player'] = (
-            pygame.image.load(PLAYERS_LIST[0][0]).convert_alpha(),
-            pygame.image.load(PLAYERS_LIST[0][1]).convert_alpha(),
-            pygame.image.load(PLAYERS_LIST[0][2]).convert_alpha(),
+            pygame.image.load(PLAYERS_LIST[2][0]).convert_alpha(),
+            pygame.image.load(PLAYERS_LIST[2][1]).convert_alpha(),
+            pygame.image.load(PLAYERS_LIST[2][2]).convert_alpha(),
         )
 
         # select random pipe sprites
